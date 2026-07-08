@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Download } from 'lucide-react'
 import { useTypewriter } from '../hooks/useTypewriter'
-import PHOTO from '../assets/photo'
 import { fadeUp, slideLeft, slideRight, stagger, viewport } from '../animations'
 
 const roles = [
@@ -71,12 +70,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Photo side */}
-          <motion.div className="hero__photo-wrap" variants={slideRight}>
-            <div className="hero__photo-glow" />
-            <div className="hero__photo-ring" />
-            <img src={PHOTO} alt="Developer" className="hero__photo" />
-          </motion.div>
+
         </motion.div>
       </div>
 
